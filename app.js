@@ -45,7 +45,7 @@ function renderSection() {
           <li><strong>Grid</strong>: Permite estructurar en filas y columnas, ideal para layouts complejos bidimensionales.</li>
         </ul>
         <p>¡Veamos cómo funcionan y cómo puedes usarlos en tus proyectos modernos!</p>
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/CSS_flex_flex-direction_row_justify-content_right.svg" alt="Flexbox ejes" style="max-width:380px;display:block;margin:1.5rem auto 0 auto;border-radius:10px;">
+       <img src="https://commons.wikimedia.org/wiki/Special:FilePath/CSS_flex_flex-direction_row_justify-content_right.svg" alt="Flexbox: Main Axis y Cross Axis" style="max-width:400px;border-radius:10px;display:block;margin:1rem auto;">
       `;
       break;
 
@@ -474,3 +474,4 @@ function renderEditorChallenge(id, title, html, initialCss, solutionCss) {
 // ---- INICIO ----
 renderSection();
 startTimer();
+
