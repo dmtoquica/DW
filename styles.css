@@ -1,0 +1,130 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #f5f7fa;
+  color: #222;
+}
+
+.navbar-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #184a9d;
+  padding: 0.3rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  gap: 0.5rem;
+}
+.tab-btn {
+  background: #2762e3;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background .2s;
+}
+.tab-btn.active, .tab-btn:hover {
+  background: #00bfff;
+  color: #00233d;
+}
+
+header {
+  background: #2762e3;
+  color: #fff;
+  padding: 1.2rem 2rem 0.8rem 2rem;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 0.4rem;
+  font-size: 2.1rem;
+}
+
+#main-content {
+  max-width: 900px;
+  margin: 2rem auto 2rem auto;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px #d1d6ea;
+  padding: 2rem;
+  min-height: 400px;
+}
+
+footer {
+  background: #f0f3f6;
+  border-top: 2px solid #e0e0e0;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  position: sticky;
+  bottom: 0;
+  z-index: 20;
+}
+
+button {
+  background: #2762e3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0 0.2rem;
+  transition: background .2s;
+}
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+button:hover:not(:disabled) {
+  background: #184a9d;
+}
+
+.editor-section textarea,
+.editor-section pre {
+  width: 100%;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.editor-section textarea {
+  min-height: 120px;
+  resize: vertical;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+  padding: 8px;
+}
+
+.live-preview {
+  border: 2px dashed #2762e3;
+  border-radius: 8px;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  background: #fafcff;
+}
+
+.success {
+  color: #198754;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+.error {
+  color: #ff9800;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 700px) {
+  #main-content {
+    padding: 1rem;
+  }
+  nav.navbar-top {
+    font-size: 0.95rem;
+    gap: 2px;
+  }
+}
