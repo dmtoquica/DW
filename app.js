@@ -294,6 +294,7 @@ function renderWorkshop() {
     `.navbar {\n  /* Añade aquí tu código */\n}\n\n.logo {\n  /* Estilo para logo */\n}\n\n.nav-links {\n  /* Añade aquí tu código */\n}\n\n.nav-links a {\n  /* Estilo para enlaces */\n}`,
     `.navbar {
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
       align-items: center;
       background-color: #333;
@@ -474,4 +475,5 @@ function renderEditorChallenge(id, title, html, initialCss, solutionCss) {
 // ---- INICIO ----
 renderSection();
 startTimer();
+
 
